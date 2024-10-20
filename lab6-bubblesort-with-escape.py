@@ -9,7 +9,7 @@ def bubble_sort_with_escape(arr):
         swapped = False  # Escape clause: track if a swap occurred
         
         # Inner loop to perform the swaps
-        for j in range(0, n - 1 - i):  # Optimize by reducing the comparison range
+        for j in range(0, n - 1 - i):  
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]  # Swap
                 swapped = True  # A swap occurred

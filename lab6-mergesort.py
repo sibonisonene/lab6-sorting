@@ -47,8 +47,7 @@ def test_merge_sort_performance():
 
     for size in sizes:
         # Generate a random list of the given size
-        arr = [i for i in range(size)]  # For best case: already sorted
-        # arr = [size - i for i in range(size)]  # For worst case: reverse sorted
+        arr = [i for i in range(size)]  
         
         # Time the sorting process
         start_time = time.time()
